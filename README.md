@@ -1,2 +1,2 @@
 # självkörande-raspberry_pi-opencv
-How to buld selfdriving car using raspberry pi and arduino
+Hur man bygger en självkörande bil med hjälp av raspberry pi och arduino
