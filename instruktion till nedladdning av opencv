@@ -55,4 +55,5 @@ För närvarande om allt är gjort utan några fel kan du starta om ditt system 
 sudo omstart
 Steg 10: Sök efter OpenCV
 Öppna python-konsolen och importera biblioteket.
+https://github.com/sleepygury03/autonoma-raspberry_pi-opencv_arduino/blob/main/opencv.png
 
