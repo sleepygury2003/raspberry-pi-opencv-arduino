@@ -58,4 +58,4 @@ För närvarande om allt är gjort utan några fel kan du starta om ditt system 
 sudo omstart
 Steg 10: Sök efter OpenCV
 Öppna python-konsolen och importera biblioteket.
-![opencv](https://user-images.githubusercontent.com/88853993/151674270-01bccc9a-5a82-4120-8ded-78aa11b36371.png)
+
