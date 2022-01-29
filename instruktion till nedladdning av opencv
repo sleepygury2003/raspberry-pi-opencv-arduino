@@ -4,7 +4,7 @@ Dessa Kommando kommer du behöva lägga i kommandotolken på raspberry pi
 
 Step 1: uppgradera Raspbian
 sudo apt-get update && sudo apt-get upgrade && sudo rpi-update
-Step 2: Increase the swap-size.
+Step 2: Öka swap-storleken.
 Bytet är en fil på disk som fungerar som "overflow" RAM-utrymme. Som standard är raspberry pi swap-storleken 100 Mb, vilket är alldeles för litet eftersom när du installerar OpenCV kommer din process att krascha i onödan. För att undvika detta måste vi öka bytesstorleken.
 För att öka swapstorleken, öppna swapfilen genom att:
 sudo nano /etc/dphys-swapfile
@@ -55,9 +55,3 @@ För närvarande om allt är gjort utan några fel kan du starta om ditt system 
 sudo omstart
 Steg 10: Sök efter OpenCV
 Öppna python-konsolen och importera biblioteket.
-
-
-
-
-
-![opencv](https://user-images.githubusercontent.com/88853993/151674270-01bccc9a-5a82-4120-8ded-78aa11b36371.png)
