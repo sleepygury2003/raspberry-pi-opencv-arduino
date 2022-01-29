@@ -2,6 +2,9 @@ Detta är en insutruktion till hur man ladda ner programvaran som kommer att anv
 Bilen ska använda sig av opencv programvara.För att kunn ladda ner denna programvaran så behöver du följa dessa instrujtioner:
 Dessa Kommando kommer du behöva lägga i kommandotolken på raspberry pi
 
+Här finns länk till video påcyoutube hur man gör:
+https://www.youtube.com/watch?v=ylnjXbcNLJU
+
 Step 1: uppgradera Raspbian
 sudo apt-get update && sudo apt-get upgrade && sudo rpi-update
 Step 2: Öka swap-storleken.
@@ -55,5 +58,3 @@ För närvarande om allt är gjort utan några fel kan du starta om ditt system 
 sudo omstart
 Steg 10: Sök efter OpenCV
 Öppna python-konsolen och importera biblioteket.
-https://github.com/sleepygury03/autonoma-raspberry_pi-opencv_arduino/blob/main/opencv.png
-
