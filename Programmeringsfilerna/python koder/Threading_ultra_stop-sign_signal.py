@@ -48,17 +48,21 @@ GPIO.setmode(GPIO.BCM)
 #set GPIO Pins
 GPIO_TRIGGER = 18
 GPIO_ECHO = 12
+PIR_PIN = 26
+PIR_PIN_2 = 20
+
 #set GPIO direction (IN / OUT)
+GPIO.setup(PIR_PIN, GPIO.IN)
 GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
 GPIO.setup(GPIO_ECHO, GPIO.IN)
+GPIO.setup(PIR_PIN_2, GPIO.IN)
 
 #Global Variable
 stop_sign = False
 stop = False
-go = False
 ultra_stop = False
-right = False
 dist = False
+stop_pir = False
 def dista():
         #Global Variable for ultra mersaure distance
     global dist
@@ -98,13 +102,18 @@ def signal():# Send Data to Arduino
     #Global Variable for stop
     global stop_sign
     global ultra_stop
+    global stop_pir
         #Deicde the measuere of ultra sensor if it is worth stop
     if dist == True:
         ultra_stop = True
     if dist == False:
         ultra_stop = False
 
-
+    if stop_pir == True:
+        c = "S"
+        print("Sending number " + str(c) + " to Arduino.")
+        ser.write(str(c).encode('utf-8'))
+        stop = True
      
     if stop_sign == True:
         c = "s"
@@ -119,7 +128,7 @@ def signal():# Send Data to Arduino
             print("Sending number " + str(c) + " to Arduino.")
             ser.write(str(c).encode('utf-8'))
             stop = True
-    if stop_sign == False and ultra_stop == False:   
+    if stop_sign == False and ultra_stop == False and pir_stop == False:   
         stop = False
             
     if stop == False:
@@ -184,7 +193,14 @@ while 1:
     # starting thread 1 and 2
     t1.start()
     t2.start()
-
+    
+    #Pir sensor, I deactivated the pir sensor by putting """ """ next to it in the code, Delete """ """ "if you want to use the pir
+    """
+    if GPIO.input(PIR_PIN) == True:
+        stop_pir = True
+    else:
+        stop_pir = False
+     """
     # Read Video steram
     frame= vs.read()
     stop_width_in_frame = stop_data(frame)
