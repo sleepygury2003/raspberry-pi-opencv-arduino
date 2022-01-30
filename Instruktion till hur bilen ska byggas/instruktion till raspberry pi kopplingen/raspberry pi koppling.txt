@@ -1,0 +1,19 @@
+Instruktion till hur du ska koppla komponeterna till raspberry pi
+
+HC-SR04:
+VCC till (5V)
+GND till (GND)
+TRIG till GPIO18
+koppla 330Ω resistor till ECHO.  På dess ände ansluter du den till Pin GPIO12 och genom ett 470Ω motstånd ansluter du den också till GND.
+
+hc-sr501
+signal till pin gpio 20
+VCC till arduino 5V
+GND till arduino gnd
+
+hc-sr501
+signal till pin gpio 26
+VCC till arduino 5V
+GND till arduino gnd
+
+Raspberry pi usb port till arduino usb port

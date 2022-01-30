@@ -1,0 +1,17 @@
+Detta kommer vara en instruktion till hur du sätter ihop 3dc printade delarna till bilen.
+
+Steg 1:
+Kolla på pdf filen med namnet GA_ritning och kolla namnen på de delarna du ska skriva ut och antalet
+steg 2:
+Skriva ut de filerna 
+Jag har ingen stl fil till skal till raspberry pi .
+steg 3:
+Kolla på GA_presentation så du vet vart de olika delarna ska sitta
+De komponeterna som inte sitter fast med skruv limmade jag fast med en limpistol
+steg 4:
+Bora Hål där skruvarna ska sitta i plattan
+steg5:
+skruva fast komponeterna och limma fast de som ska limmas.
+
+
+

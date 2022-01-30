@@ -1,0 +1,12 @@
+Dessa är komponeterna som bilen använder:
+2 hc-sr501(pir sensor)
+1 hc-sr04(Ultrasonic senor)
+4 Mecanum hjul
+4 3-6V DC motor
+1 Arduino uno
+1 Raspberry Pi 4 8GB
+2 powerbank(Linocell Powerbank 7800 mAh Grå)
+1 raspberry 4 skal(https://www.amazon.se/gp/product/B07TVLTMX3/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
+1 raspberry pi camera v.2
+1 hc-05(Bluetooth)
+
