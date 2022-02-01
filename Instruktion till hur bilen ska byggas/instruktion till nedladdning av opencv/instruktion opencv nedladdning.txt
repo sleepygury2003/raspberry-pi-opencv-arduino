@@ -2,7 +2,7 @@ Detta är en insutruktion till hur man ladda ner programvaran som kommer att anv
 Bilen ska använda sig av opencv programvara.För att kunn ladda ner denna programvaran så behöver du följa dessa instrujtioner:
 Dessa Kommando kommer du behöva lägga i kommandotolken på raspberry pi
 
-Här finns länk till video påcyoutube hur man gör:
+Här finns länk till video på youtube hur man gör:
 https://www.youtube.com/watch?v=ylnjXbcNLJU
 
 Steg 1: uppgradera Raspbian
